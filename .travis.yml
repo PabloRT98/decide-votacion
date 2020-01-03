@@ -11,7 +11,7 @@ before_script:
 - psql -U postgres -c "create user decide password 'decide'"
 - psql -U postgres -c "create database test_decide owner decide"
 - psql -U postgres -c "ALTER USER decide CREATEDB"
-- cp local_settings.example.py local_settings.py
+- cp travis_local_settings.py local_settings.py
 - python manage.py makemigrations
 - python manage.py migrate
 - python manage.py loaddata decideDB.json
