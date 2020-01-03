@@ -1,1 +1,1285 @@
-[{"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "authtoken", "model": "token"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "base", "model": "auth"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "base", "model": "key"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "census", "model": "census"}}, {"model": "contenttypes.contenttype", "pk": 11, "fields": {"app_label": "mixnet", "model": "mixnet"}}, {"model": "contenttypes.contenttype", "pk": 12, "fields": {"app_label": "store", "model": "vote"}}, {"model": "contenttypes.contenttype", "pk": 13, "fields": {"app_label": "voting", "model": "question"}}, {"model": "contenttypes.contenttype", "pk": 14, "fields": {"app_label": "voting", "model": "questionoption"}}, {"model": "contenttypes.contenttype", "pk": 15, "fields": {"app_label": "voting", "model": "voting"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can add user", "content_type": 4, "codename": "add_user"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can change user", "content_type": 4, "codename": "change_user"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can delete user", "content_type": 4, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add content type", "content_type": 5, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change content type", "content_type": 5, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete content type", "content_type": 5, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can add session", "content_type": 6, "codename": "add_session"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can change session", "content_type": 6, "codename": "change_session"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can delete session", "content_type": 6, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can add Token", "content_type": 7, "codename": "add_token"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can change Token", "content_type": 7, "codename": "change_token"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can delete Token", "content_type": 7, "codename": "delete_token"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can add auth", "content_type": 8, "codename": "add_auth"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can change auth", "content_type": 8, "codename": "change_auth"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can delete auth", "content_type": 8, "codename": "delete_auth"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add key", "content_type": 9, "codename": "add_key"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change key", "content_type": 9, "codename": "change_key"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete key", "content_type": 9, "codename": "delete_key"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can add census", "content_type": 10, "codename": "add_census"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can change census", "content_type": 10, "codename": "change_census"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can delete census", "content_type": 10, "codename": "delete_census"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can add mixnet", "content_type": 11, "codename": "add_mixnet"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can change mixnet", "content_type": 11, "codename": "change_mixnet"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can delete mixnet", "content_type": 11, "codename": "delete_mixnet"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can add vote", "content_type": 12, "codename": "add_vote"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can change vote", "content_type": 12, "codename": "change_vote"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can delete vote", "content_type": 12, "codename": "delete_vote"}}, {"model": "auth.permission", "pk": 37, "fields": {"name": "Can add question", "content_type": 13, "codename": "add_question"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change question", "content_type": 13, "codename": "change_question"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete question", "content_type": 13, "codename": "delete_question"}}, {"model": "auth.permission", "pk": 40, "fields": {"name": "Can add question option", "content_type": 14, "codename": "add_questionoption"}}, {"model": "auth.permission", "pk": 41, "fields": {"name": "Can change question option", "content_type": 14, "codename": "change_questionoption"}}, {"model": "auth.permission", "pk": 42, "fields": {"name": "Can delete question option", "content_type": 14, "codename": "delete_questionoption"}}, {"model": "auth.permission", "pk": 43, "fields": {"name": "Can add voting", "content_type": 15, "codename": "add_voting"}}, {"model": "auth.permission", "pk": 44, "fields": {"name": "Can change voting", "content_type": 15, "codename": "change_voting"}}, {"model": "auth.permission", "pk": 45, "fields": {"name": "Can delete voting", "content_type": 15, "codename": "delete_voting"}}]
+[{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "token"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "authentication",
+        "model": "userprofile"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "base",
+        "model": "auth"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "base",
+        "model": "key"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "census",
+        "model": "census"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "mixnet",
+        "model": "mixnet"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "store",
+        "model": "vote"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "voting",
+        "model": "question"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "voting",
+        "model": "questionoption"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "voting",
+        "model": "voting"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "voting",
+        "model": "politicalparty"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "98vrdfbekmx89103yxs0c7bds1ulek5z",
+    "fields": {
+        "session_data": "ZWI4ZDJjZTA3ODk5MWYzOGRjYTQyNThhYjY0MDNkZjI0ODVjMDYxYzp7ImF1dGgtdG9rZW4iOiI0ZWJkNjE3NGM1NTBlMTYwMTBjZTY5MDU4ODJjYjQxMGY1OTNmODc0IiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJiYXNlLmJhY2tlbmRzLkF1dGhCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZDhhZTFhNWNiYjk5MTM5NDYyYzM2OTkxOWJiMGY5NTM1NmNiMTYxMCJ9",
+        "expire_date": "2020-01-16T14:10:01.972Z"
+    }
+}, {
+    "model": "base.auth",
+    "pk": 1,
+    "fields": {
+        "name": "me",
+        "url": "http://localhost:8000",
+        "me": true
+    }
+}, {
+    "model": "base.key",
+    "pk": 1,
+    "fields": {
+        "p": 60307531583570830117370942559215636090842785645655185359425505454586292165087,
+        "g": 29360829400229233405279492815344530556041599137700102014942651350719729151848,
+        "y": 26203276602442983663070752761125148372225276983235941654298701505945889901201,
+        "x": 24327452903479569391116985999261748401595211451805653810585731595737897736088
+    }
+}, {
+    "model": "base.key",
+    "pk": 2,
+    "fields": {
+        "p": 60307531583570830117370942559215636090842785645655185359425505454586292165087,
+        "g": 29360829400229233405279492815344530556041599137700102014942651350719729151848,
+        "y": 26203276602442983663070752761125148372225276983235941654298701505945889901201,
+        "x": 0
+    }
+}, {
+    "model": "base.key",
+    "pk": 3,
+    "fields": {
+        "p": 60307531583570830117370942559215636090842785645655185359425505454586292165087,
+        "g": 29360829400229233405279492815344530556041599137700102014942651350719729151848,
+        "y": 26203276602442983663070752761125148372225276983235941654298701505945889901201,
+        "x": 0
+    }
+}, {
+    "model": "base.key",
+    "pk": 4,
+    "fields": {
+        "p": 110056872062800583359400177785486021059693198999942865618009422056165283797807,
+        "g": 109746476586777408651109741762701026873380227959845613875194896642435045697948,
+        "y": 17083220769037658397514641770260805581906822971767960882078780139621940390861,
+        "x": 9537616123022223504618394627095573078932050116449637654696856553979115120703
+    }
+}, {
+    "model": "base.key",
+    "pk": 5,
+    "fields": {
+        "p": 110056872062800583359400177785486021059693198999942865618009422056165283797807,
+        "g": 109746476586777408651109741762701026873380227959845613875194896642435045697948,
+        "y": 17083220769037658397514641770260805581906822971767960882078780139621940390861,
+        "x": 0
+    }
+}, {
+    "model": "base.key",
+    "pk": 6,
+    "fields": {
+        "p": 110056872062800583359400177785486021059693198999942865618009422056165283797807,
+        "g": 109746476586777408651109741762701026873380227959845613875194896642435045697948,
+        "y": 17083220769037658397514641770260805581906822971767960882078780139621940390861,
+        "x": 0
+    }
+}, {
+    "model": "base.key",
+    "pk": 7,
+    "fields": {
+        "p": 78463234285472807976302505812916495151422582404877919001457761430459569113367,
+        "g": 74557853136140513313726922122231908716882411922979976490319781279612766252001,
+        "y": 55156756863474809587852402030204547680131749867874340604036565384277609650813,
+        "x": 54268654920339098482541939086906057378232860105626312247710564551724841787840
+    }
+}, {
+    "model": "base.key",
+    "pk": 8,
+    "fields": {
+        "p": 78463234285472807976302505812916495151422582404877919001457761430459569113367,
+        "g": 74557853136140513313726922122231908716882411922979976490319781279612766252001,
+        "y": 55156756863474809587852402030204547680131749867874340604036565384277609650813,
+        "x": 0
+    }
+}, {
+    "model": "base.key",
+    "pk": 9,
+    "fields": {
+        "p": 78463234285472807976302505812916495151422582404877919001457761430459569113367,
+        "g": 74557853136140513313726922122231908716882411922979976490319781279612766252001,
+        "y": 55156756863474809587852402030204547680131749867874340604036565384277609650813,
+        "x": 0
+    }
+}, {
+    "model": "base.key",
+    "pk": 10,
+    "fields": {
+        "p": 91076783396140418162036287407705829828542653835458373358261205195180994266507,
+        "g": 19507614530327698471785437995520776398358621520678960715241563146606102487264,
+        "y": 45174526827596890589925240064005632895253198933756336607074610419863021531603,
+        "x": 14260915614501732064938648072329479981661783627557589728895563271159042797714
+    }
+}, {
+    "model": "base.key",
+    "pk": 11,
+    "fields": {
+        "p": 91076783396140418162036287407705829828542653835458373358261205195180994266507,
+        "g": 19507614530327698471785437995520776398358621520678960715241563146606102487264,
+        "y": 45174526827596890589925240064005632895253198933756336607074610419863021531603,
+        "x": 0
+    }
+}, {
+    "model": "base.key",
+    "pk": 12,
+    "fields": {
+        "p": 91076783396140418162036287407705829828542653835458373358261205195180994266507,
+        "g": 19507614530327698471785437995520776398358621520678960715241563146606102487264,
+        "y": 45174526827596890589925240064005632895253198933756336607074610419863021531603,
+        "x": 0
+    }
+}, {
+    "model": "census.census",
+    "pk": 1,
+    "fields": {
+        "voting_id": 1,
+        "voter_id": 1
+    }
+}, {
+    "model": "census.census",
+    "pk": 2,
+    "fields": {
+        "voting_id": 3,
+        "voter_id": 1
+    }
+}, {
+    "model": "census.census",
+    "pk": 3,
+    "fields": {
+        "voting_id": 4,
+        "voter_id": 1
+    }
+}, {
+    "model": "mixnet.mixnet",
+    "pk": 1,
+    "fields": {
+        "voting_id": 1,
+        "auth_position": 0,
+        "key": 1,
+        "pubkey": 2,
+        "auths": [1]
+    }
+}, {
+    "model": "mixnet.mixnet",
+    "pk": 2,
+    "fields": {
+        "voting_id": 2,
+        "auth_position": 0,
+        "key": 4,
+        "pubkey": 5,
+        "auths": [1]
+    }
+}, {
+    "model": "mixnet.mixnet",
+    "pk": 3,
+    "fields": {
+        "voting_id": 3,
+        "auth_position": 0,
+        "key": 7,
+        "pubkey": 8,
+        "auths": [1]
+    }
+}, {
+    "model": "mixnet.mixnet",
+    "pk": 4,
+    "fields": {
+        "voting_id": 4,
+        "auth_position": 0,
+        "key": 10,
+        "pubkey": 11,
+        "auths": [1]
+    }
+}, {
+    "model": "store.vote",
+    "pk": 1,
+    "fields": {
+        "voting_id": 1,
+        "voter_id": 1,
+        "a": 5560901165462761581858399335371879384993331095844215014282395088839432641594,
+        "b": 49685964525377974644967990658888463624863544293684684077438817755043977977964,
+        "voted": "2020-01-02T15:35:55.932Z"
+    }
+}, {
+    "model": "store.vote",
+    "pk": 2,
+    "fields": {
+        "voting_id": 4,
+        "voter_id": 1,
+        "a": 8442953340868507707997211046188059760876043656150339848120197497151530979056,
+        "b": 3913810744842300195089189685367275102462897092944821146462121747534876237204,
+        "voted": "2020-01-02T18:13:08.990Z"
+    }
+}, {
+    "model": "voting.question",
+    "pk": 1,
+    "fields": {
+        "desc": "PP senado"
+    }
+}, {
+    "model": "voting.question",
+    "pk": 2,
+    "fields": {
+        "desc": "ff"
+    }
+}, {
+    "model": "voting.question",
+    "pk": 3,
+    "fields": {
+        "desc": "dsds"
+    }
+}, {
+    "model": "voting.questionoption",
+    "pk": 1,
+    "fields": {
+        "question": 1,
+        "number": 1,
+        "option": "aguza"
+    }
+}, {
+    "model": "voting.questionoption",
+    "pk": 2,
+    "fields": {
+        "question": 2,
+        "number": 1,
+        "option": "perico"
+    }
+}, {
+    "model": "voting.questionoption",
+    "pk": 3,
+    "fields": {
+        "question": 3,
+        "number": 2,
+        "option": "aguza"
+    }
+}, {
+    "model": "voting.questionoption",
+    "pk": 4,
+    "fields": {
+        "question": 3,
+        "number": 3,
+        "option": "perico"
+    }
+}, {
+    "model": "voting.voting",
+    "pk": 1,
+    "fields": {
+        "name": "Partido Popular",
+        "desc": "",
+        "question": 1,
+        "tipe": "SP",
+        "political_party": 1,
+        "start_date": "2020-01-02T15:35:31.397Z",
+        "end_date": "2020-01-02T15:36:00.742Z",
+        "pub_key": 3,
+        "tally": [1],
+        "postproc": [{
+            "votes": 1,
+            "number": 1,
+            "option": "aguza",
+            "postproc": 1
+        }],
+        "auths": [1]
+    }
+}, {
+    "model": "voting.voting",
+    "pk": 2,
+    "fields": {
+        "name": "Prueba",
+        "desc": "",
+        "question": 2,
+        "tipe": "PP",
+        "political_party": 1,
+        "start_date": "2020-01-02T17:25:52.288Z",
+        "end_date": "2020-01-02T17:26:35.182Z",
+        "pub_key": 6,
+        "tally": [],
+        "postproc": [{
+            "votes": 0,
+            "number": 1,
+            "option": "perico",
+            "postproc": 0
+        }],
+        "auths": [1]
+    }
+}, {
+    "model": "voting.voting",
+    "pk": 3,
+    "fields": {
+        "name": "Partido Socialista Obrero Espa\u00f1ol",
+        "desc": "",
+        "question": 1,
+        "tipe": "PP",
+        "political_party": 1,
+        "start_date": "2020-01-02T18:10:31.123Z",
+        "end_date": null,
+        "pub_key": 9,
+        "tally": null,
+        "postproc": null,
+        "auths": [1]
+    }
+}, {
+    "model": "voting.voting",
+    "pk": 4,
+    "fields": {
+        "name": "winner",
+        "desc": "",
+        "question": 3,
+        "tipe": "PP",
+        "political_party": 1,
+        "start_date": "2020-01-02T18:12:29.119Z",
+        "end_date": "2020-01-02T18:13:17.170Z",
+        "pub_key": 12,
+        "tally": [2],
+        "postproc": [{
+            "votes": 1,
+            "number": 2,
+            "option": "aguza",
+            "postproc": 1
+        }, {
+            "votes": 0,
+            "number": 3,
+            "option": "perico",
+            "postproc": 0
+        }],
+        "auths": [1]
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can add Token",
+        "content_type": 7,
+        "codename": "add_token"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can change Token",
+        "content_type": 7,
+        "codename": "change_token"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": 7,
+        "codename": "delete_token"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can add user profile",
+        "content_type": 8,
+        "codename": "add_userprofile"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can change user profile",
+        "content_type": 8,
+        "codename": "change_userprofile"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can delete user profile",
+        "content_type": 8,
+        "codename": "delete_userprofile"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add auth",
+        "content_type": 9,
+        "codename": "add_auth"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change auth",
+        "content_type": 9,
+        "codename": "change_auth"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete auth",
+        "content_type": 9,
+        "codename": "delete_auth"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can add key",
+        "content_type": 10,
+        "codename": "add_key"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can change key",
+        "content_type": 10,
+        "codename": "change_key"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can delete key",
+        "content_type": 10,
+        "codename": "delete_key"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can add census",
+        "content_type": 11,
+        "codename": "add_census"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can change census",
+        "content_type": 11,
+        "codename": "change_census"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can delete census",
+        "content_type": 11,
+        "codename": "delete_census"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can add mixnet",
+        "content_type": 12,
+        "codename": "add_mixnet"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can change mixnet",
+        "content_type": 12,
+        "codename": "change_mixnet"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can delete mixnet",
+        "content_type": 12,
+        "codename": "delete_mixnet"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add vote",
+        "content_type": 13,
+        "codename": "add_vote"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change vote",
+        "content_type": 13,
+        "codename": "change_vote"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete vote",
+        "content_type": 13,
+        "codename": "delete_vote"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can add question",
+        "content_type": 14,
+        "codename": "add_question"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can change question",
+        "content_type": 14,
+        "codename": "change_question"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can delete question",
+        "content_type": 14,
+        "codename": "delete_question"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can add question option",
+        "content_type": 15,
+        "codename": "add_questionoption"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can change question option",
+        "content_type": 15,
+        "codename": "change_questionoption"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can delete question option",
+        "content_type": 15,
+        "codename": "delete_questionoption"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can add voting",
+        "content_type": 16,
+        "codename": "add_voting"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can change voting",
+        "content_type": 16,
+        "codename": "change_voting"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can delete voting",
+        "content_type": 16,
+        "codename": "delete_voting"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add political party",
+        "content_type": 17,
+        "codename": "add_politicalparty"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change political party",
+        "content_type": 17,
+        "codename": "change_politicalparty"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete political party",
+        "content_type": 17,
+        "codename": "delete_politicalparty"
+    }
+}, {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$mhmSjjpDZrA2$CSq+SCzhxl4YHi0SEVcZoCPsBFVakkp4YdiLleFgFTk=",
+        "last_login": "2020-01-02T14:10:01.967Z",
+        "is_superuser": true,
+        "username": "aguza",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-01-02T14:09:28.646Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$rhrB1chXzvFV$uJE+6xtmv5PaaSjD/a4dMoy8buw+cCk5fVhuStqbXHM=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "perico",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-01-02T17:14:05.834Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "authtoken.token",
+    "pk": "4ebd6174c550e16010ce6905882cb410f593f874",
+    "fields": {
+        "user": 1,
+        "created": "2020-01-02T14:10:01.935Z"
+    }
+}, {
+    "model": "authentication.userprofile",
+    "pk": 1,
+    "fields": {
+        "related_political_party": 1,
+        "birthdate": "2000-01-08",
+        "sex": "M",
+        "province": "S",
+        "employment": "B"
+    }
+}, {
+    "model": "authentication.userprofile",
+    "pk": 2,
+    "fields": {
+        "related_political_party": 1,
+        "birthdate": "2002-01-02",
+        "sex": "M",
+        "province": "H",
+        "employment": "S"
+    }
+}, {
+    "model": "voting.politicalparty",
+    "pk": 1,
+    "fields": {
+        "name": "Partido Popular",
+        "acronym": "PP",
+        "description": "",
+        "headquarters": "Calle de Ferraz, 70, 28008 Madrid",
+        "image": null,
+        "president": null
+    }
+}, {
+    "model": "voting.politicalparty",
+    "pk": 2,
+    "fields": {
+        "name": "Partido Socialista Obrero Espa\u00f1ol",
+        "acronym": "PSOE",
+        "description": "",
+        "headquarters": "Calle de Ferraz, 70, 28008 Madrid",
+        "image": null,
+        "president": null
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2020-01-02T14:46:38.748Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "Partido Popular",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2020-01-02T14:47:50.474Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "(M,2020-01-08,Partido Popular)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2020-01-02T14:48:09.683Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "PP senado",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"question option\", \"object\": \"aguza (1)\"}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2020-01-02T14:48:44.593Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "http://localhost:8000",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2020-01-02T15:07:20.427Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "(M,2020-01-08,Partido Popular)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"employment\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2020-01-02T15:14:11.054Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "(M,2000-01-08,Partido Popular)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"birthdate\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2020-01-02T15:15:24.037Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "1",
+        "object_repr": "Partido Popular",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2020-01-02T15:17:02.632Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "1",
+        "object_repr": "Partido Popular",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"political_party\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2020-01-02T15:33:43.616Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "Partido Socialista Obrero Espa\u00f1ol",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2020-01-02T15:33:56.989Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "1",
+        "object_repr": "Partido Popular",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"tipe\", \"political_party\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2020-01-02T15:35:36.278Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Census object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2020-01-02T17:14:07.379Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "perico",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2020-01-02T17:14:55.536Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "(M,2002-01-02,Partido Popular)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2020-01-02T17:15:17.242Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "ff",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"question option\", \"object\": \"perico (1)\"}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2020-01-02T17:16:36.369Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "(M,2001-01-02,Partido Popular)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"birthdate\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2020-01-02T17:16:43.960Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "Prueba",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2020-01-02T17:17:07.619Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "(M,2002-01-01,Partido Popular)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"birthdate\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2020-01-02T17:22:15.739Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "Prueba",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2020-01-02T17:22:40.947Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "(M,2002-01-02,Partido Popular)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"birthdate\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2020-01-02T17:22:49.237Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "Prueba",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2020-01-02T17:23:07.406Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "(M,2002-01-03,Partido Popular)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"birthdate\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2020-01-02T17:24:31.478Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "(M,2002-01-02,Partido Popular)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"birthdate\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2020-01-02T17:24:43.373Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "Prueba",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2020-01-02T18:09:48.791Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "3",
+        "object_repr": "Partido Socialista Obrero Espa\u00f1ol",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2020-01-02T18:11:06.964Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "2",
+        "object_repr": "Census object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2020-01-02T18:12:06.029Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "dsds",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"question option\", \"object\": \"aguza (2)\"}}, {\"added\": {\"name\": \"question option\", \"object\": \"perico (3)\"}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2020-01-02T18:12:12.359Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "4",
+        "object_repr": "winner",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2020-01-02T18:12:23.545Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "Census object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}]
