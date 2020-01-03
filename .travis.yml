@@ -21,11 +21,9 @@ python:
 - '3.6'
 install:
 - pip install -r requirements.txt
-- wget -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -P ~/
-- unzip ~/chromedriver_linux64.zip -d ~/
-- rm ~/chromedriver_linux64.zip
-- sudo mv -f ~/chromedriver /usr/local/share/
-- sudo chmod +x /usr/local/share/chromedriver
-- sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+- wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
+- tar -x geckodriver -zf geckodriver-v0.24.0-linux64.tar.gz -O > /usr/bin/geckodriver
+- chmod +x /usr/bin/geckodriver
+- rm geckodriver-v0.24.0-linux64.tar.gz
 script:
-- travis_wait 20 python manage.py test
+- python manage.py test
