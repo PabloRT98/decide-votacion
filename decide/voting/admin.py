@@ -4,6 +4,7 @@ from django.utils import timezone
 from .models import QuestionOption
 from .models import Question
 from .models import Voting
+from .models import PoliticalParty
 
 from .filters import StartedFilter
 
@@ -45,6 +46,12 @@ class VotingAdmin(admin.ModelAdmin):
 
     actions = [ start, stop, tally ]
 
+class PoliticalPartyAdmin(admin.ModelAdmin):
+    readonly_fields = ('president',)
+    
+
+
 
 admin.site.register(Voting, VotingAdmin)
 admin.site.register(Question, QuestionAdmin)
+admin.site.register(PoliticalParty,PoliticalPartyAdmin )
