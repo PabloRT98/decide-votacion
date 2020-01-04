@@ -5,31 +5,26 @@ branches:
   only:
   - master
   - develop
-env:
- - MOZ_HEADLESS=1
 addons:
   postgresql: '9.4'
-  firefox: latest
 before_script:
 - psql -U postgres -c "create user decide password 'decide'"
 - psql -U postgres -c "create database test_decide owner decide"
 - psql -U postgres -c "ALTER USER decide CREATEDB"
-- cd decide
-- cp travis_local_settings.py local_settings.py
-- python manage.py makemigrations
-- python manage.py migrate
-- python manage.py loaddata decideDB.json
 language: python
 python:
 - '3.6'
-before_install:
-- wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
-- mkdir geckodriver
-- tar -xzf geckodriver-v0.24.0-linux64.tar.gz -C geckodriver
-- chmod +x /usr/bin/geckodriver
-- rm geckodriver-v0.24.0-linux64.tar.gz
 install:
 - pip install -r requirements.txt
+- pip install codacy-coverage
 script:
-- python manage.py test
-sudo: false
+- cd decide
+- cp travis_local_settings.py local_settings.py
+- python ./manage.py makemigrations
+- python ./manage.py migrate
+- python ./manage.py loaddata decideDB.json
+- python ./manage.py test --keepdb
+- rm local_settings.py
+- coverage run --branch --source=. ./manage.py test --keepdb
+- coverage xml
+- python-codacy-coverage -r coverage.xml
