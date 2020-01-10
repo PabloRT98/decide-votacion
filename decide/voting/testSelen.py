@@ -1,25 +1,29 @@
 import unittest
 from selenium import webdriver
-from selenium.webdriver.support.ui import Select
 import time
 
-class TestSignup(unittest.TestCase):
+# este test debe ser ejecutado perfectamente por selenium
+class TestAddPoliticalParty(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.PhantomJS()
+
+        
         
     def test_signup_fire(self):
-        self.driver.get("http://localhost:8000/admin/login/?next=/admin/")
-        self.driver.find_element_by_id('id_username').send_keys("aguza")
-        self.driver.find_element_by_id('id_password').send_keys("aguzaaguza")
-        time.sleep(2)
-        self.driver.find_element_by_css_selector('div.submit-row').click()
+        #Realizamos login, con las credenciales a continuacion
 
-        time.sleep(1)
-        self.driver.find_element_by_link_text("Votings").click()
+        self.driver.set_window_size(1120, 550)
+        self.driver.get("https://duckduckgo.com/")
+        self.driver.find_element_by_id('search_form_input_homepage').send_keys("realpython")
+        self.driver.find_element_by_id("search_button_homepage").click()
+        print('si selenium')
+
+        
 
     def tearDown(self):
         self.driver.quit
 
 if __name__ == '__main__':
     unittest.main()
+
