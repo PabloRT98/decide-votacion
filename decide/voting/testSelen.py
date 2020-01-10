@@ -17,6 +17,8 @@ class TestAddPoliticalParty(unittest.TestCase):
         self.driver.get("https://duckduckgo.com/")
         self.driver.find_element_by_id('search_form_input_homepage').send_keys("realpython")
         self.driver.find_element_by_id("search_button_homepage").click()
+        self.driver.get("http://localhost:8000/admin/login/?next=/admin/")
+        self.driver.find_element_by_css_selector('div.submit-row').click()
         print('si selenium')
 
         
