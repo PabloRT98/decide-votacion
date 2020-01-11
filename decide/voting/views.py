@@ -5,11 +5,11 @@ from django.shortcuts import get_object_or_404
 from rest_framework import generics, status
 from rest_framework.response import Response
 
-from .models import Question, QuestionOption, Voting
-from .serializers import SimpleVotingSerializer, VotingSerializer
+from .models import Question, QuestionOption, Voting, PoliticalParty
+from .serializers import SimpleVotingSerializer, VotingSerializer, VotingPerUserSerializer, PoliticalPartySerializer
 from base.perms import UserIsStaff
 from base.models import Auth
-
+from census.models import Census
 
 class VotingView(generics.ListCreateAPIView):
     queryset = Voting.objects.all()
@@ -99,3 +99,30 @@ class VotingUpdate(generics.RetrieveUpdateDestroyAPIView):
             msg = 'Action not found, try with start, stop or tally'
             st = status.HTTP_400_BAD_REQUEST
         return Response(msg, status=st)
+
+class VotingsPerUser(generics.ListCreateAPIView):
+    serializer_class = VotingPerUserSerializer
+
+    def get_queryset(self):
+        queryset = []
+        userId = self.request.GET.get('id')
+        censusRows = Census.objects.filter(voter_id = userId)
+        for census in censusRows:
+            voting = Voting.objects.get(pk = census.voting_id)
+            queryset.append(voting)
+        return queryset
+
+
+#Adding CRUD methods for political parties
+
+# For get and post request methods
+class PoliticalPartyList(generics.ListCreateAPIView):
+    queryset = PoliticalParty.objects.all()
+    serializer_class = PoliticalPartySerializer
+
+
+#For put and delete methods
+#For get a political party with pk of political parties
+class PoliticalPartyDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = PoliticalParty.objects.all()
+    serializer_class = PoliticalPartySerializer
