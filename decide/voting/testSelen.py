@@ -61,7 +61,7 @@ class TestAddPoliticalParty(unittest.TestCase):
         self.driver.find_element_by_name('_continue')
 
         #cambiamos el nombre del partido
-        self.driver.find_element_by_id('id_name').send_keys('edited')
+        self.driver.find_element_by_id('id_name').send_keys(' edited')
 
         #posteriormente guardamos para ver qeu se ha editado el partido en cuestion
         self.driver.find_element_by_css_selector('input.default').click()
@@ -94,6 +94,39 @@ class TestAddPoliticalParty(unittest.TestCase):
         # obtenemos el mesaje de error al ejecutar intenetar insertar un partido con la misma descripción y nombre
         print('aqui estamos e el bad')
         self.assertTrue(len(self.driver.find_elements_by_class_name('errornote'))>0)    
+
+    
+
+    def test_delete(self):
+        #Realizamos login, con las credenciales a continuacion
+        self.driver.get("http://localhost:8000/admin/login/?next=/admin/")
+        self.driver.find_element_by_id('id_username').send_keys("user1")
+        self.driver.find_element_by_id('id_password').send_keys("decide2020")
+        time.sleep(2)
+        self.driver.find_element_by_xpath("//input[@type='submit']").click()
+        #Añadimos una pequeña pausa para que el navegadpr no se sature
+        time.sleep(1)
+        #Clickamos en el botón añadir partido político
+        self.driver.find_element_by_link_text("Political partys").click()
+        self.driver.find_element_by_link_text("Partido de Selenium").click()
+        self.driver.find_element_by_css_selector('a.deletelink').click()
+        self.driver.find_element_by_xpath("//input[@type='submit']").click()
+        
+        time.sleep(1)
+
+        self.driver.find_element_by_link_text("Partido de Selenium 2 edited").click()
+        self.driver.find_element_by_css_selector('a.deletelink').click()
+        self.driver.find_element_by_xpath("//input[@type='submit']").click()
+
+        #Añadimos todos los campos necesarios para poder guardar un partido politico
+
+        self.assertTrue(len(self.driver.find_elements_by_class_name('success'))>0) 
+
+
+        # una vez introducimos la informacion añadimos al partido
+        
+        # obtenemos el mesaje de error al ejecutar intenetar insertar un partido con la misma descripción y nombre
+            
 
     def tearDown(self):
         self.driver.quit
